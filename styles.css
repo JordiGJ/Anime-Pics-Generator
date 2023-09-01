@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  min-height: 100vh;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to left, rgb(72, 136, 72), rgb(252, 111, 111));
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 1rem;
+}
+section {
+  text-align: center;
+  width: 450px;
+  min-width: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 2rem;
+  box-shadow: 0 2px 4px #bebebe;
+  border-radius: 5px;
+}
+button {
+  border: solid black 2px;
+  color: #fff;
+  background-color: green;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  width: 150px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:disabled {
+  background-color: grey;
+}
+
+img {
+  width: 100%;
+}
+.image-container {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: solid green 2px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+p {
+  background-color: green;
+  width: 100%;
+  color: #fff;
+  padding: 0.8rem;
+  border-radius: 5px;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (width <= 380px) {
+  .image-container {
+    width: 220px;
+    height: 220px;
+  }
+}
